@@ -1,0 +1,383 @@
+/* =========================
+   Tickets Page
+========================= */
+
+.tickets-page {
+  width: 100%;
+  padding: 0 0 40px;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.tickets-header {
+  margin-bottom: 30px;
+}
+
+.tickets-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.5px;
+}
+
+.tickets-subtitle {
+  margin: 8px 0 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =========================
+   Section Titles
+========================= */
+
+.section-title {
+  margin: 0 0 18px;
+  font-size: 20px;
+  font-weight: 650;
+  color: #111827;
+}
+
+
+/* =========================
+   Create Ticket
+========================= */
+
+.create-ticket-card {
+  background: #ffffff;
+  padding: 26px;
+  margin-bottom: 34px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.ticket-input,
+.ticket-textarea,
+.status-select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  margin-bottom: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ticket-input:focus,
+.ticket-textarea:focus,
+.status-select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.ticket-textarea {
+  min-height: 120px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+
+/* =========================
+   Create Button
+========================= */
+
+.create-ticket-button {
+  margin-top: 4px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.create-ticket-button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.create-ticket-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================
+   Empty State
+========================= */
+
+.empty-state {
+  padding: 40px 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  color: #6b7280;
+  text-align: center;
+}
+
+
+/* =========================
+   Ticket List
+========================= */
+
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+/* =========================
+   Ticket Card
+========================= */
+
+.ticket-card {
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================
+   Ticket Header
+========================= */
+
+.ticket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ticket-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 650;
+  color: #111827;
+}
+
+
+/* =========================
+   Status Badge
+========================= */
+
+.ticket-status {
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: #ecfdf5;
+  color: #047857;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+/* =========================
+   Description
+========================= */
+
+.ticket-description {
+  margin: 13px 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   Ticket Footer
+========================= */
+
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+  border-top: 1px solid #f0f1f3;
+  border-bottom: 1px solid #f0f1f3;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.ticket-footer strong {
+  color: #374151;
+}
+
+
+/* =========================
+   Status Update
+========================= */
+
+.status-section {
+  margin-top: 18px;
+}
+
+.status-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-select {
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   AI Button
+========================= */
+
+.ai-button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ai-button:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+}
+
+.ai-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================
+   AI Analysis
+========================= */
+
+.analysis-card {
+  position: relative;
+  margin-top: 34px;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.analysis-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #4f46e5;
+}
+
+.analysis-card .section-title {
+  margin-bottom: 24px;
+}
+
+
+/* =========================
+   Analysis Items
+========================= */
+
+.analysis-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #eef0f3;
+}
+
+.analysis-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.analysis-item strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #374151;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.analysis-item p {
+  margin: 0;
+  color: #111827;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   Suggested Response
+========================= */
+
+.response-box {
+  margin-top: 10px;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 700px) {
+
+  .tickets-title {
+    font-size: 26px;
+  }
+
+  .create-ticket-card,
+  .ticket-card,
+  .analysis-card {
+    padding: 20px;
+  }
+
+  .ticket-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ticket-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+}

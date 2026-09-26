@@ -1,0 +1,304 @@
+/* =========================
+   AI Assistant Page
+========================= */
+
+.ai-page {
+  width: 100%;
+  padding: 0 0 40px;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.ai-header {
+  margin-bottom: 30px;
+}
+
+.ai-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.5px;
+}
+
+.ai-subtitle {
+  margin: 8px 0 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =========================
+   Search Card
+========================= */
+
+.ai-search-card {
+  background: #ffffff;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   Search Input
+========================= */
+
+.ai-input-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.ai-input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ai-input::placeholder {
+  color: #9ca3af;
+}
+
+.ai-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+
+/* =========================
+   Ask Button
+========================= */
+
+.ai-ask-button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 9px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.ai-ask-button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.ai-ask-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================
+   Answer Section
+========================= */
+
+.ai-answer-section {
+  margin-bottom: 30px;
+}
+
+.ai-section-title {
+  margin: 0 0 14px;
+  font-size: 20px;
+  font-weight: 650;
+  color: #111827;
+}
+
+
+/* =========================
+   Answer Card
+========================= */
+
+.ai-answer-card {
+  position: relative;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.ai-answer-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #4f46e5;
+}
+
+.ai-answer-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #374151;
+  white-space: pre-wrap;
+}
+
+
+/* =========================
+   Sources Section
+========================= */
+
+.ai-sources-section {
+  margin-top: 10px;
+}
+
+.ai-sources-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.ai-source-count {
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   Sources List
+========================= */
+
+.ai-sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+/* =========================
+   Source Card
+========================= */
+
+.ai-source-card {
+  padding: 19px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ai-source-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   Source Header
+========================= */
+
+.ai-source-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.ai-source-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.ai-document-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+
+/* =========================
+   Relevance Badge
+========================= */
+
+.ai-relevance {
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+/* =========================
+   Source Text
+========================= */
+
+.ai-source-text {
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid #f0f1f3;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 700px) {
+
+  .ai-title {
+    font-size: 26px;
+  }
+
+  .ai-search-card,
+  .ai-answer-card,
+  .ai-source-card {
+    padding: 20px;
+  }
+
+  .ai-input-wrapper {
+    flex-direction: column;
+  }
+
+  .ai-ask-button {
+    width: 100%;
+  }
+
+  .ai-source-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ai-relevance {
+    align-self: flex-start;
+  }
+}
